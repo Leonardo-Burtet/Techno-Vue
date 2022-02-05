@@ -14,6 +14,11 @@
       "nome": "Leonardo",
       "estrelas": 2,
       "descricao": "Gostei muito do produto, atendeu todas as minhas necessidades"
+    },
+    {
+      "nome": "Hugo",
+      "estrelas": 5,
+      "descricao": "Gostei muito do produto, atendeu todas as minhas necessidades"
     }
   ]
 }
