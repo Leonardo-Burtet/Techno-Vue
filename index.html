@@ -7,8 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="./vue.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Techno</title>
 </head>
@@ -18,9 +19,9 @@
 
     <section class="produtos">
       <div v-for="produto in produtos" :key="produto.id" class="produto">
-        <img :src="produto.img" :alt="produto.nome" class="produto_img"/>
+        <img :src="produto.img" :alt="produto.nome" class="produto_img" />
         <div class="produto_info">
-          <span class="produto_preco">{{produto.preco}}</span>
+          <span class="produto_preco">{{produto.preco | numeroPreco}}</span>
           <h2 class="produto_titulo">{{produto.nome}}</h2>
         </div>
       </div>
