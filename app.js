@@ -93,7 +93,7 @@ const vm = new Vue({
     produto() {
       document.title = this.produto.nome || 'Techno';
       const hash = this.produto.id || '';
-      history.pushState(null, null, `${hash}`);
+      history.pushState(null, null, `#${hash}`);
       if (this.produto) this.compararEstoque();
     },
     carrinho() {
